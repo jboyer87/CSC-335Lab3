@@ -12,9 +12,7 @@ int main()
 
 	std::cout << "P9.3:" << std::endl;
 
-	//P9dot3::run();
-
-	std::cout << std::endl << std::endl;
+	P9dot3::run();
 
 	return 0;
 }

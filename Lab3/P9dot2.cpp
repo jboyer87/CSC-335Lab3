@@ -52,13 +52,11 @@ namespace P9dot2 {
 	MyDictionary::MyDictionary()
 	{
 		// Dictionary initializes a new empty list when instantiated
-
 		m_list = new std::list<DictionaryElement>;
 	}
 
 	MyDictionary::~MyDictionary()
 	{
-
 		// Delete the list
 		delete m_list;
 	}
@@ -82,7 +80,7 @@ namespace P9dot2 {
 		while (iterator != m_list->end())
 		{
 			// If the value is found, return the iterator
-			if ((*iterator).m_key == key)
+			if ((*iterator).getKey() == key)
 			{
 				return iterator;
 			}
@@ -103,7 +101,7 @@ namespace P9dot2 {
 			throw DuplicateKey("An element with that key already exists.");
 		}
 
-		// Place the elemenet at the end of the list
+		// Place the element at the end of the list
 		m_list->emplace_back(element);
 
 		// Grab an iterator at the end of the list
@@ -123,7 +121,7 @@ namespace P9dot2 {
 		for (Iterator iterator = m_list->begin(); iterator != m_list->end(); iterator++)
 		{
 			// If the value is found, erase the element that the iterator points to
-			if ((*iterator).m_key == key)
+			if ((*iterator).getKey() == key)
 			{
 				m_list->erase(iterator);
 				break;

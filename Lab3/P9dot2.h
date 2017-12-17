@@ -15,9 +15,6 @@ namespace P9dot2 {
 	private:
 		int m_key;
 		int m_value;
-
-		// Dictionary is a friend so that it can access the key/value pair
-		friend class MyDictionary;
 	};
 
 	// Custom exception to be usesd below in the dictionary class
