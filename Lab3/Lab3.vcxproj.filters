@@ -24,12 +24,18 @@
     <ClCompile Include="P9dot2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="P8dot2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="P9dot3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="P9dot2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="P8dot2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
